@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
                 Color.fromARGB(255, 82, 2, 114),
                 Color.fromARGB(255, 72, 11, 179)
               ])),
-          child: StartScreen(),
+          child:const StartScreen(),
         ),
       ),
     );

@@ -38,7 +38,7 @@ const SizedBox(
                   () {
                     Navigator.pop(context ,true );
                   }
-                  , icon: Icon(Icons.arrow_right_alt_outlined),
+                  , icon:const Icon(Icons.arrow_right_alt_outlined),
                    label:const Text('Start Quiz'))
 
         ],
