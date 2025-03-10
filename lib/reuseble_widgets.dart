@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 
-class ReusebleWidgets extends StatefulWidget {
-  const ReusebleWidgets({super.key});
+class AnswerButton extends StatelessWidget {
+  const AnswerButton({super.key, required this.answerText, required this.onTap});
 
-  @override
-  State<ReusebleWidgets> createState() => _ReusebleWidgetsState();
-}
-
-class _ReusebleWidgetsState extends State<ReusebleWidgets> {
+  final String answerText;
+  final void Function() onTap;
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  ElevatedButton(
+               style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 27, 1, 77),
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+                  padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 40)
+
+                
+
+               ),
+              onPressed: onTap ,
+              child: Text(answerText));
   }
 }
