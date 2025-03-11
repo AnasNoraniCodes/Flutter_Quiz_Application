@@ -1,118 +1,118 @@
 import 'package:flutter_quiz_application/models/quiz_questions.dart';
 
-const  questions = [
-  QuizQuestions("What is Flutter?", [
-    "A UI toolkit",
-    "A programming language",
-    "An operating system",
-    "A database",
+const questions = [
+  QuizQuestions("What Is Flutter?", [
+    "A UI Toolkit",
+    "A Programming Language",
+    "An Operating System",
+    "A Database",
   ]),
-  QuizQuestions("Which programming language is used in Flutter?", [
+  QuizQuestions("Which Programming Language Is Used In Flutter?", [
     "Dart",
     "Java",
     "Swift",
     "Kotlin",
   ]),
-  QuizQuestions("Which widget is used for a scrollable list?", [
+  QuizQuestions("Which Widget Is Used For A Scrollable List?", [
     "ListView",
     "Column",
     "Row",
     "Stack",
   ]),
-  QuizQuestions("What is the command to create a new Flutter project?", [
-    "flutter create my_app",
-    "flutter new project",
-    "flutter init",
-    "flutter start my_app",
+  QuizQuestions("What Is The Command To Create A New Flutter Project?", [
+    "Flutter Create My_app",
+    "Flutter New Project",
+    "Flutter Init",
+    "Flutter Start My_app",
   ]),
-  QuizQuestions("Which package is used to manage state in Flutter?", [
-    "provider",
-    "http",
-    "flutter_bloc",
-    "Both B and C",
+  QuizQuestions("Which Package Is Used To Manage State In Flutter?", [
+    "Provider",
+    "Http",
+    "Flutter_bloc",
+    "Both B And C",
   ]),
-  QuizQuestions("What is the entry point function of a Flutter app?", [
-    "main()",
-    "start()",
-    "runApp()",
-    "initState()",
+  QuizQuestions("What Is The Entry Point Function Of A Flutter App?", [
+    "Main()",
+    "Start()",
+    "RunApp()",
+    "InitState()",
   ]),
-  QuizQuestions("What is the default build mode in Flutter?", [
+  QuizQuestions("What Is The Default Build Mode In Flutter?", [
     "Debug",
     "Release",
     "Profile",
     "Test",
   ]),
-  QuizQuestions("Which widget is used to display a snackbar in Flutter?", [
+  QuizQuestions("Which Widget Is Used To Display A Snackbar In Flutter?", [
     "SnackBar",
     "AlertDialog",
     "BottomSheet",
     "Toast",
   ]),
-  QuizQuestions("Which widget allows user input in Flutter?", [
+  QuizQuestions("Which Widget Allows User Input In Flutter?", [
     "TextField",
     "Text",
     "Button",
     "Scaffold",
   ]),
-  QuizQuestions("Which widget is used to create a flexible layout?", [
+  QuizQuestions("Which Widget Is Used To Create A Flexible Layout?", [
     "Expanded",
     "Container",
     "Column",
     "SizedBox",
   ]),
-  QuizQuestions("Which tool is used to debug Flutter applications?", [
+  QuizQuestions("Which Tool Is Used To Debug Flutter Applications?", [
     "Flutter Inspector",
     "Chrome DevTools",
     "Android Studio",
-    "All of the above",
+    "All Of The Above",
   ]),
-  QuizQuestions("Which package is used to make HTTP requests in Flutter?", [
-    "http",
-    "dio",
-    "socket.io",
-    "Both A and B",
+  QuizQuestions("Which Package Is Used To Make Http Requests In Flutter?", [
+    "Http",
+    "Dio",
+    "Socket.io",
+    "Both A And B",
   ]),
-  QuizQuestions("Which function is used to navigate to a new screen in Flutter?", [
+  QuizQuestions("Which Function Is Used To Navigate To A New Screen In Flutter?", [
     "Navigator.push()",
     "Navigator.pop()",
-    "setState()",
-    "showDialog()",
+    "SetState()",
+    "ShowDialog()",
   ]),
-  QuizQuestions("Which widget is used to create a scrollable list with different types of items?", [
+  QuizQuestions("Which Widget Is Used To Create A Scrollable List With Different Types Of Items?", [
     "ListView.builder",
     "Column",
     "GridView",
     "ListView",
   ]),
-  QuizQuestions("How can you optimize performance in a Flutter app?", [
-    "Use StatelessWidgets when possible",
-    "Use const constructors",
-    "Minimize rebuilds",
-    "All of the above",
+  QuizQuestions("How Can You Optimize Performance In A Flutter App?", [
+    "Use StatelessWidgets When Possible",
+    "Use Const Constructors",
+    "Minimize Rebuilds",
+    "All Of The Above",
   ]),
-  QuizQuestions("What does `setState()` do in Flutter?", [
-    "Updates the UI by triggering a rebuild",
-    "Deletes a widget",
-    "Closes the app",
-    "Fetches data from the internet",
+  QuizQuestions("What Does `SetState()` Do In Flutter?", [
+    "Updates The UI By Triggering A Rebuild",
+    "Deletes A Widget",
+    "Closes The App",
+    "Fetches Data From The Internet",
   ]),
-  QuizQuestions("Which widget is used to create a button with elevation?", [
+  QuizQuestions("Which Widget Is Used To Create A Button With Elevation?", [
     "ElevatedButton",
     "FlatButton",
     "TextButton",
     "OutlinedButton",
   ]),
-  QuizQuestions("Which widget is used to display a bottom navigation bar?", [
+  QuizQuestions("Which Widget Is Used To Display A Bottom Navigation Bar?", [
     "BottomNavigationBar",
     "AppBar",
     "TabBar",
     "NavigationRail",
   ]),
-  QuizQuestions("Which command is used to run a Flutter app on an emulator?", [
-    "flutter run",
-    "flutter start",
-    "flutter build",
-    "flutter emulator",
+  QuizQuestions("Which Command Is Used To Run A Flutter App On An Emulator?", [
+    "Flutter Run",
+    "Flutter Start",
+    "Flutter Build",
+    "Flutter Emulator",
   ]),
 ];
