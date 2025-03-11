@@ -4,7 +4,9 @@ import 'package:flutter_quiz_application/reuseble_widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuestionsScreen extends StatefulWidget {
-  const QuestionsScreen({super.key});
+  const QuestionsScreen({super.key, required this.onSelectedAnswer});
+  // added voidcallback in here..also added required things..
+  final void Function(String answer) onSelectedAnswer;
 
   @override
   State<QuestionsScreen> createState() => _QuestionsScreenState();
@@ -12,9 +14,10 @@ class QuestionsScreen extends StatefulWidget {
 
 class _QuestionsScreenState extends State<QuestionsScreen> {
   var currentQuestionIndex = 0;
-   
-
-  void questionAnswerd() {
+  // In here added widget that connect widgetstate to main state...
+  // then added a perameter like string selectedAnswer to send a value of answer...
+  void questionAnswerd(String selectedAnswer) {
+    widget.onSelectedAnswer(selectedAnswer);
     setState(() {
       currentQuestionIndex++;
     });
@@ -22,7 +25,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final  currentQuestion = questions[currentQuestionIndex] ;
+    final currentQuestion = questions[currentQuestionIndex];
     return SizedBox(
       width: double.infinity,
       child: Container(
@@ -36,11 +39,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             Text(
               currentQuestion.text,
               style: GoogleFonts.lato(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-               color: const Color.fromARGB(255, 217, 182, 236)
-
-              ),
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: const Color.fromARGB(255, 217, 182, 236)),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 40),
@@ -48,7 +49,8 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               return AnswerButton(
                 answerText: answer,
                 onTap: () {
-                  questionAnswerd();
+                  // added here function to add a function with perameters
+                  questionAnswerd(answer);
                 },
               );
             })

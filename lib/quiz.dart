@@ -10,6 +10,13 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+  //first created a list of empty string .
+  final List<String> selectedAnswer = [];
+ //fucntion that wil add answer to list
+  void chooseAnswer(String answer) {
+    selectedAnswer.add(answer);
+  }
+
 //     //here we initilized widgets first
 //   Widget? activeScreen;
 //   @override
@@ -32,6 +39,7 @@ class _QuizState extends State<Quiz> {
 //advantage is we dont need to initstate here
   var activeScreen = 'StartScreen';
   // added a function for switching
+
   void switchScreen() {
     setState(() {
       activeScreen = 'questionScreen';
@@ -44,7 +52,7 @@ class _QuizState extends State<Quiz> {
     // if condition met  screenWidget = const QuestionsScreen .
     Widget screenWidget = StartScreen(switchScreen);
     if (activeScreen == 'questionScreen') {
-      screenWidget = const QuestionsScreen();
+      screenWidget =  QuestionsScreen(onSelectedAnswer: chooseAnswer,); // passed a chooseAnswer as value to Screen.
     }
 
     return MaterialApp(
@@ -63,6 +71,10 @@ class _QuizState extends State<Quiz> {
         ),
       ),
     );
-    
   }
 }
+
+// Code is written in different places to keep it structured, readable, and maintainable.
+// Logic goes inside functions, while UI stays inside build().
+// If something changes the UI → put it inside setState() inside State class.
+// If something needs to be reusable → pass it using VoidCallback.
