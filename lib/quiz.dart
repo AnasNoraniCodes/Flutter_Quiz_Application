@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quiz_application/data/data.dart';
 import 'package:flutter_quiz_application/questions_screen.dart';
+import 'package:flutter_quiz_application/results_screen.dart';
 import 'package:flutter_quiz_application/start_screen.dart';
 
 class Quiz extends StatefulWidget {
@@ -11,10 +13,19 @@ class Quiz extends StatefulWidget {
 
 class _QuizState extends State<Quiz> {
   //first created a list of empty string .
-  final List<String> selectedAnswer = [];
- //fucntion that wil add answer to list
+  List<String> selectedAnswer = [];
+  //fucntion that wil add answer to list
   void chooseAnswer(String answer) {
     selectedAnswer.add(answer);
+
+    //checking conditions that the questions are equal to answers
+
+    if (selectedAnswer.length == questions.length) {
+      setState(() {
+        selectedAnswer = [];
+        activeScreen = 'ResultsScreen';
+      });
+    }
   }
 
 //     //here we initilized widgets first
@@ -52,7 +63,17 @@ class _QuizState extends State<Quiz> {
     // if condition met  screenWidget = const QuestionsScreen .
     Widget screenWidget = StartScreen(switchScreen);
     if (activeScreen == 'questionScreen') {
-      screenWidget =  QuestionsScreen(onSelectedAnswer: chooseAnswer,); // passed a chooseAnswer as value to Screen.
+      screenWidget = QuestionsScreen(
+        onSelectedAnswer: chooseAnswer,
+      ); // passed a chooseAnswer as value to Screen.
+    }
+
+    if (activeScreen == 'ResultsScreen') {
+      screenWidget =  ResultsScreen(
+        chosenAnswers: selectedAnswer,  
+          
+
+      );
     }
 
     return MaterialApp(
