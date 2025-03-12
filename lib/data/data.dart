@@ -115,4 +115,12 @@ const  questions = [
     "flutter build",
     "flutter emulator",
   ]),
+ QuizQuestions("What does the 'build' method do in Flutter?", [
+  "Creates UI",
+  "Runs app",
+  "Fetches data",
+  "Handles state",
+]),
+
+
 ];

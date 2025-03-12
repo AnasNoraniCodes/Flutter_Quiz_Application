@@ -79,7 +79,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
               ),
               onPressed: widget.onRestart,
               icon: const Icon(Icons.refresh),
-              label: const Text('Start Quiz')),
+              label: const Text('Restart Quiz !')),
 
             ],
           ),
