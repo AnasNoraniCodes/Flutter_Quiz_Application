@@ -1,6 +1,6 @@
 # Flutter Quiz App
 
-📘 What I Learned
+## What I Learned
 Building this Flutter Quiz App has been an exciting journey! I gained a deeper understanding of Stateless and Stateful widgets, learning when and how to use them effectively. Working with state management, I explored how to update the UI dynamically as users interact with the app. I also learned about navigation in Flutter.Which allowed me to move between different screens seamlessly. Implementing lists and maps to store quiz questions and answers gave me hands-on experience with data management. Additionally, I practiced handling user interactions through functions and callbacks, making the app more interactive. This project also helped me improve my understanding of conditional rendering, ensuring that the right screen appears at the right time. Overall, this experience has strengthened my Flutter skills and given me more confidence in mobile app development! 
 
 ## Introduction
